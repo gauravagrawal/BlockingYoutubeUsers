@@ -1,7 +1,9 @@
 {
-    "name": "My First Extension",
+    "name": "Block Youtube Users",
     "version": "1.0",
-    "description": "The first extension that I made.", 
+    "description": "This extension will help block videos from users on youtube. With the help of this 
+		    extension when you click on the blocked user video, you will be notified that user
+		    is in your block list", 
     "content_scripts": [ 
 	{
 	   "matches": [
