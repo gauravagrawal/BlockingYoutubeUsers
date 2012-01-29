@@ -1,0 +1,27 @@
+<head>
+    <head>
+	<style>
+	    body {
+		min-width:357px;
+		overflow-x:hidden;
+	    }
+
+	    img {
+		margin:5px;
+		border:2px solid black;
+		vertical-align:middle;
+		width:75px;
+		height:75px;
+	    }
+	</style>
+
+	<script>
+	    function onRequest(request, sender, sendResponse) { 
+		alert(request);
+		chrome.pageAction.show(sender.tab.id);
+		sendResponse('Google Dev');
+	    }
+	    chrome.extension.onRequest.addListener(onRequest);
+	</script>
+    </head>
+</html>
